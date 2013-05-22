@@ -1,0 +1,11 @@
+extends layout
+
+block content
+
+    .hero-unit
+        form(action='/logme', method="post").form-signin
+            h1.form-signin-heading Please sign in
+            input.input-block-level(type='text', name='email', placeholder='Email address')
+            input.input-block-level(type='password', name='password', placeholder='Password')
+            button.btn.btn-large.btn-primary(type='submit') Sign in
+

@@ -1,0 +1,33 @@
+doctype 5
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    body
+        div.navbar.navbar-inverse.navbar-fixed-top
+            div.navbar-inner
+                div.container
+                    button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.brand(href='/') supFarm
+                    .nav-collapse.collapse
+                        ul.nav
+                            li.active
+                                a(href='/') Home
+                            li
+                                a(href='/signUp') Sign up
+                            li
+                                a(href='/login') Login
+        div.container
+            block content
+
+        hr
+        .container
+            p.muted.credit
+                | Copyright SupFarm
+
+        block scripts
+            script(src='/javascripts/jquery.js')
+            script(src='/javascripts/bootstrap.js')
