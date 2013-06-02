@@ -1,0 +1,5 @@
+li a span { margin-left: 10px; }
+li a.grow-tomatoes { background: url('../images/tomatoes.png') no-repeat; margin-left: 3px; }
+li a.grow-corn { background: url('../images/corn.png') no-repeat; margin-left: 3px; }
+li a.grow-wheat { background: url('../images/wheat.png') no-repeat; margin-left: 6px; }
+li a.grow-wheat span { margin-left: 7px; }

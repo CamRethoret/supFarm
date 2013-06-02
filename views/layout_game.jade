@@ -1,0 +1,55 @@
+doctype 5
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+        link(rel='stylesheet', href='/stylesheets/supfarm.css')
+        script
+            var igeRoot = '/engine/';
+        script(src='/engine/loader.js')
+    body
+        div.navbar.navbar-inverse.navbar-fixed-top
+            div.navbar-inner
+                div.container
+                    button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.brand(href='/') supFarm
+                    .nav-collapse.collapse
+                        ul.nav
+                            li.active
+                                a(href='/') Home
+                            li
+                                a(href='/signUp') Sign up
+                            li
+                                a(href='/login') Login
+                            li(class='dropdown')
+                                a(class="dropdown-toggle", id='dropBuildings', data-toggle='dropdown', data-target='#') Buildings
+                                    b(class='caret')
+                                ul(class='dropdown-menu', role='menu', aria-labelledby='dropBuildings')
+                                    li
+                                        a(href='#') Silo
+                                    li
+                                        a(href='#') Barn
+                                    li
+                                        a(href='#') Cold Storage
+                            li(class="dropdown")
+                                a(class='dropdown-toggle', id='dropGrowings', data-toggle='dropdown', data-target='#') Growings
+                                    b(class='caret')
+                                ul(class='dropdown-menu', role='menu', aria-labelledby='dropGrowings')
+                                    li
+                                        a(href='#', class="grow-tomatoes")
+                                            span Tomatoes
+                                    li
+                                        a(href='#', class="grow-corn")
+                                            span Corn
+                                    li
+                                        a(href='#', class="grow-wheat")
+                                            span Wheat
+        div.container
+            block content
+
+        block scripts
+            script(src='/javascripts/jquery.js')
+            script(src='/javascripts/bootstrap.js')

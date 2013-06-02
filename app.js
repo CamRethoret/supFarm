@@ -3,11 +3,11 @@
  * Module dependencies.
  */
 
-
-
 var express = require('express')
   , routes = require('./routes')
   , auth = require('./routes/auth')
+
+    , game = require('./routes/game')
   , http = require('http')
   , path = require('path')
   , port = 3000
@@ -32,6 +32,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/game', game.game);
 app.get('/login', auth.login);
 app.get('/signUp', auth.signUp);
 app.post('/signUp', auth.register);

@@ -1,0 +1,19 @@
+extends layout_game
+
+block content
+
+    link(rel='stylesheet', href='/stylesheets/isogenic.css')
+
+    div.container
+
+        .igeLoading.loadingFloat
+            .loadingLogo
+            .loadingCircle
+            .loadingCircleInner
+            #loadingText.loadingText
+                | Loading
+            #loadingProgress
+                #loadingProgressBar
+        .igeLoading.loadingLink
+            | Powered By Isogenic Game Engine
+            a(href='http://www.isogenicengine.com', target='_blank') http://www.isogenicengine.com
