@@ -7,15 +7,24 @@ var mongoose=require('./getMongoose.js').mongoose,
             required: true,
             unique : false
         },
+        position : {
+            type : String,
+            required : true,
+
+        },
         humidity : {
             type : Number,
             required: true,
-            unique : false
+            unique : false,
+            min : 0,
+            max : 100
         },
         fertility : {
             type : Number,
             required: true,
-            unique : false
+            unique : false,
+            min : 0,
+            max : 100
         },
         time : {                         // le temps de plantation
             type : Number,
@@ -39,7 +48,8 @@ var mongoose=require('./getMongoose.js').mongoose,
         growing_id : {
             type: Number,
             required : false,
-            unique : false
+            unique : false,
+            default: null
         }
     }),
 

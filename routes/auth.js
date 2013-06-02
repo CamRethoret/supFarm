@@ -31,7 +31,11 @@ exports.register=function(req, res){
         "last_name":    req.body.last_name,
         "email":        req.body.email,
         "age":          req.body.age,
-        "password":     req.body.password
+        "password":     req.body.password,
+        "type":         "player",
+        "money":        0,
+        "location":     "1,1",
+        "level":        1
     })
     newUser.save(function(error, user){
         if(error){console.log(error);}

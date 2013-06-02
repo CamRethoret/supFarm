@@ -7,12 +7,14 @@ var express = require('express')
   , routes = require('./routes')
   , auth = require('./routes/auth')
 
-    , game = require('./routes/game')
+  , game = require('./routes/game')
   , http = require('http')
   , path = require('path')
   , port = 3000
 
 var app = express();
+var server = http.createServer(app);
+var io = require('socket.io').listen(server);
 
 // all environments
 app.set('port', process.env.PORT || port);
@@ -33,10 +35,23 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/game', game.game);
+app.get('/generateTile', game.generateTile);
 app.get('/login', auth.login);
 app.get('/signUp', auth.signUp);
 app.post('/signUp', auth.register);
 
-http.createServer(app).listen(app.get('port'), function(){
+server.listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+io.sockets.on('connection', function(socket) {
+    var Tile = require('./models/Tile.Model.js').Tile,
+        query = Tile.find();
+
+    query.exec(function(error,tiles) {
+        if(error) { console.log(error); }
+        else {
+            socket.emit('getTiles', tiles);
+        }
+    });
+})

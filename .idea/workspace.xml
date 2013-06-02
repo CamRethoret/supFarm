@@ -1,32 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64574e8e-cc51-4a4b-a226-62f8e9850681" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Building.Model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Growing.Model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Item.Model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Tile.Model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/User.Model.js" afterPath="$PROJECT_DIR$/models/User.Model.js" />
+    <list default="true" id="64574e8e-cc51-4a4b-a226-62f8e9850681" name="Default" comment="Ajout de plusieurs models pour le jeu">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/NinjaSpriteSheet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/Tool-3DTranslate.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/Tool-Pan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/Tool-Selection (1).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/Tool-Selection.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/Tool-Square.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/Tool-Zoom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/socket.io/client/WebSocketMain.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/socket.io/client/WebSocketMainInsecure.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/fonts/adobe_arabic_26pt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/bakery1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/bank1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/base_se.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/base_se_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/base_se_middle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/base_se_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/base_sw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/base_sw_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/base_sw_middle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/base_sw_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/burgerShop1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/canvas-tag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/cardBack.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/cardSheet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/cardSheet_1560.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/cardSheet_1950.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/cardSheet_442.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/cardSheet_884.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/cardSheet_large.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/char110.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/char112.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/char113.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/charchip01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/backgrounds/chipBackground.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/chipsSheet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/chipsSheetSmall.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/church1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/backgrounds/city_skyline.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/corn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/crane_ne.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/crane_nw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/crane_se.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/crane_sw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/particles/dark_effect_001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/dropdown-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/fonts/eater_26pt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/edgeDetectTest.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/electricalsShop1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/fairy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/gallery_6129_38_17945.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/gallery_72313_146_12172.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/gallery_72313_146_21247.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/gamingLogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/particles/glow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/backgrounds/grassTile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/backgrounds/grassTile.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/backgrounds/greyGradient.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/guard01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/guard02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/icon-gear.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/icon_entity.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/indicatorArrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/iso_tiles.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/lampPost1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/lampPost2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/lampPost3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/lampPost4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/lenna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/loadingGame.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/newchar01-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/newchar02-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/newchar03-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/newchar04-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/newchar05-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/plants.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/prettycoolheh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/push.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/push.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/shinigami.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/stacker_se.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/stacker_se_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/stacker_se_middle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/stacker_se_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/stacker_sw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/stacker_sw_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/stacker_sw_middle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/stacker_sw_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/particles/star1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/particles/star1_glow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/particles/star2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/particles/star2_glow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/particles/star3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/particles/star4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/backgrounds/tableExtended.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/tomatoes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/tree1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/tron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/tronGlowMask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/uiButton_delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/uiButton_dollar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/uiButton_house.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/uiButton_move.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/uiButton_roads.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/uiButton_select.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/uiButton_thumbsDown.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/uiButton_thumbsUp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/uiButton_tree.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/fonts/verdana_10pt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/fonts/verdana_10px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/fonts/verdana_12pt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/vx_chara02_c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/wheat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wheat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/particles/wind_eff_001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/sprites/womanWalking.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/youLose.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/youLose.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/youWin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/objects/youWin.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/zoom_minus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/ui/zoom_plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/BloomPass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/gameClasses/Character.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/gameClasses/CharacterContainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ClientConfig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/gameClasses/ClientNetworkEvents.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/DotScreenPass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/EffectComposer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/FilmPass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/IgeAnimationComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeBase.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/physics/box2d/IgeBox2dComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/physics/box2d/IgeBox2dWorker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeCamera.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/physics/cannon/IgeCannonComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeCellSheet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/chat/IgeChatClient.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/chat/IgeChatComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/chat/IgeChatServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeClass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/cocoonjs/IgeCocoonJsComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeCollisionMap2d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/primitives/IgeCuboid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeDummyContext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeEngine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeEntity.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/physics/box2d/IgeEntityBox2d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/physics/cannon/IgeEntityCannon.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/IgeEntityManagerComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeEventingClass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeFilters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeFontEntity.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeFontSheet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/assets/IgeFontSmartTexture.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/IgeInputComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeMap2d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeMapStack2d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeMatrix2d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/database/mongodb/IgeMongoDb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/database/mongodb/IgeMongoDbComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/IgeMousePanComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/IgeMouseZoomComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/database/mysql/IgeMySql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/database/mysql/IgeMySqlComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/net.io/IgeNetIoClient.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/net.io/IgeNetIoComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/net.io/IgeNetIoServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/IgeNetworkClient.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeObject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeParticleEmitter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/IgePathComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgePathFinder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgePathNode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgePoint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgePoly2d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeQuest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeRect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeScene2d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/socket.io/IgeSocketIoClient.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/socket.io/IgeSocketIoComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/socket.io/IgeSocketIoServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeSpriteSheet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/stream/IgeStreamComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeTexture.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeTextureAtlas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeTextureMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/IgeThree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeTileMap2d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeTileMapStack2d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/IgeTiledComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/IgeTimeSyncExtension.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeTween.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/IgeTweenComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiAutoFlow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiButton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeUiEntity.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiGridPanel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiLabel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiMenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/extensions/IgeUiPositionExtension.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiProgressBar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiRadioButton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiSlider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/extensions/IgeUiStyleExtension.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiTabPanel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiTextBox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiTimeStream.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiTogglePanel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/ui/IgeUiTooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/IgeVelocityComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/core/IgeViewport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/MaskPass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/gameClasses/PlayerComponent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/RenderPass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ServerConfig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/gameClasses/ServerNetworkEvents.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/ShaderExtras.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/ShaderPass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/Sparks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/TexturePass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/TrackballControls.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/Tween.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/blur.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/brighten.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/colorOverlay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/convolute.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/edgeDetect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/edgeEnhance.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/emboss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/glowMask.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/greyScale.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/net.io/net.io-client/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/invert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/physics/box2d/lib_box2d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/physics/box2d/lib_box2d.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/physics/cannon/lib_cannon.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/stackTrace/lib_stack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/outlineDetect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/chat/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/sharpen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/smartTextures/simpleBox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/sobel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/socket.io/client/socket.io.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/network/socket.io/client/socket.io.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/three.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/three.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/components/three/three.rev49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/engine/filters/threshold.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Tile.Model.js" afterPath="$PROJECT_DIR$/models/Tile.Model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/auth.js" afterPath="$PROJECT_DIR$/routes/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/game.js" afterPath="$PROJECT_DIR$/routes/game.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout_game.jade" afterPath="$PROJECT_DIR$/views/layout_game.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="supFarm.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370166542223" ignored="false" />
+    <file path="/Dummy.txt" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370187299339" ignored="false" />
     <file path="/readme.txt" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1368612300442" ignored="false" />
     <file path="/layout.jade" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1369234453035" ignored="false" />
-    <file path="/game.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1369318844298" ignored="false" />
-    <file path="/app.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1369319759967" ignored="false" />
-    <file path="/client.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370110053105" ignored="false" />
+    <file path="/game.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370172848280" ignored="false" />
+    <file path="/app.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370184206137" ignored="false" />
+    <file path="/client.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370186621271" ignored="false" />
     <file path="/game.jade" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1369397515309" ignored="false" />
-    <file path="/layout_game.jade" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370165124287" ignored="false" />
+    <file path="/layout_game.jade" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370180992151" ignored="false" />
     <file path="/ServerConfig.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370109573470" ignored="false" />
-    <file path="/server.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370110235301" ignored="false" />
+    <file path="/server.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370178943423" ignored="false" />
     <file path="/supfarm.css" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370165968065" ignored="false" />
     <file path="/User.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370167125105" ignored="false" />
-    <file path="/Tile.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370168040796" ignored="false" />
+    <file path="/Tile.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370184482171" ignored="false" />
     <file path="/Growing.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370168745281" ignored="false" />
     <file path="/Building.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370169037419" ignored="false" />
     <file path="/Item.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370169249184" ignored="false" />
+    <file path="/auth.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370169801444" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,106 +299,88 @@
     <favorites_list name="supFarm" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/client.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="20" selection-start="3239" selection-end="3239" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServerConfig.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/ServerConfig.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="67" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="30" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.Model.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/User.Model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="19" selection-start="0" selection-end="1220" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tile.Model.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Tile.Model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="62" selection-start="0" selection-end="1226" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Growing.Model.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Growing.Model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="52" selection-start="0" selection-end="1270" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Building.Model.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Building.Model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="37" selection-start="0" selection-end="884" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.Model.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/Item.Model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="27" selection-start="475" selection-end="475" vertical-scroll-proportion="0.7100737">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout_game.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layout_game.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="49" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="supfarm.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/supfarm.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="44" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/client.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="77" column="20" selection-start="2858" selection-end="2858" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/routes/game.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="15" column="29" selection-start="313" selection-end="313" vertical-scroll-proportion="0.13492064">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="auth.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/routes/auth.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="37" column="24" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="layout_game.jade" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/layout_game.jade">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="5" column="63" selection-start="174" selection-end="220" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="supfarm.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/stylesheets/supfarm.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="44" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="auth.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/routes/auth.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="32" column="48" selection-start="777" selection-end="777" vertical-scroll-proportion="1.3913044">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="56" column="2" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Tile.Model.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/models/Tile.Model.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="55" column="0" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -162,22 +398,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/engine/loader.js" />
-        <option value="$PROJECT_DIR$/public/ClientConfig.js" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/views/game.jade" />
         <option value="$PROJECT_DIR$/public/gameClasses/PlayerComponent.js" />
-        <option value="$PROJECT_DIR$/routes/auth.js" />
-        <option value="$PROJECT_DIR$/public/ServerConfig.js" />
-        <option value="$PROJECT_DIR$/public/server.js" />
-        <option value="$PROJECT_DIR$/public/client.js" />
-        <option value="$PROJECT_DIR$/views/layout_game.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/supfarm.css" />
         <option value="$PROJECT_DIR$/models/User.Model.js" />
-        <option value="$PROJECT_DIR$/models/Tile.Model.js" />
         <option value="$PROJECT_DIR$/models/Growing.Model.js" />
         <option value="$PROJECT_DIR$/models/Building.Model.js" />
         <option value="$PROJECT_DIR$/models/Item.Model.js" />
+        <option value="$PROJECT_DIR$/routes/auth.js" />
+        <option value="$PROJECT_DIR$/public/ServerConfig.js" />
+        <option value="$PROJECT_DIR$/public/server.js" />
+        <option value="$PROJECT_DIR$/views/layout_game.jade" />
+        <option value="$PROJECT_DIR$/models/Tile.Model.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/client.js" />
+        <option value="$PROJECT_DIR$/routes/game.js" />
       </list>
     </option>
   </component>
@@ -256,71 +492,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supFarm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supFarm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supFarm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supFarm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supFarm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supFarm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supFarm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supFarm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -341,6 +513,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\supFarm\public\javascripts" />
       <recent name="C:\wamp\www\supFarm\node_modules" />
       <recent name="C:\wamp\www\supFarm\public" />
       <recent name="C:\Users\Akaralda\Documents\supFarm" />
@@ -421,23 +594,27 @@
       <created>1370166557682</created>
       <updated>1370166557682</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ajout de plusieurs models pour le jeu">
+      <created>1370169441555</created>
+      <updated>1370169441555</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17498139" sideWeight="0.77210885" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17498139" sideWeight="0.7091837" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298585" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22789116" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29081634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -489,7 +666,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifications sur isogenic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de plusieurs models pour le jeu" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -509,67 +686,33 @@
     <MESSAGE value="Ajout des modules node 1/?" />
     <MESSAGE value="Ajout des modules node 2/2" />
     <MESSAGE value="Modifications sur isogenic" />
+    <MESSAGE value="Ajout de plusieurs models pour le jeu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/game.js">
+    <entry file="file://$PROJECT_DIR$/models/Building.Model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="23" column="37" selection-start="0" selection-end="884" vertical-scroll-proportion="0.69572955">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/ClientConfig.js">
+    <entry file="file://$PROJECT_DIR$/models/Growing.Model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/ServerConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="67" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="35" column="52" selection-start="0" selection-end="1270" vertical-scroll-proportion="0.6975089">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/engine/loader.js">
+    <entry file="file://$PROJECT_DIR$/models/User.Model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/engine/CoreConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4332553" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="20" selection-start="3239" selection-end="3239" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="33" selection-start="767" selection-end="767" vertical-scroll-proportion="0.4028103" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="30" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout_game.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="49" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.0">
+        <state line="8" column="46" selection-start="218" selection-end="218" vertical-scroll-proportion="-0.48398575">
           <folding />
         </state>
       </provider>
@@ -581,46 +724,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/User.Model.js">
+    <entry file="file://D:/Cours/SUPINFO/M1/Projects/engine payant/examples/19.2-database-mongodb/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="0" selection-end="1220" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ServerConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="229" selection-end="229" vertical-scroll-proportion="0.42857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="28" selection-start="189" selection-end="189" vertical-scroll-proportion="0.32162163">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout_game.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="63" selection-start="174" selection-end="220" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/getMongoose.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Tile.Model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="62" selection-start="0" selection-end="1226" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="55" column="0" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Growing.Model.js">
+    <entry file="file://$PROJECT_DIR$/public/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="52" selection-start="0" selection-end="1270" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="77" column="20" selection-start="2858" selection-end="2858" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Building.Model.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="37" selection-start="0" selection-end="884" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="56" column="2" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Item.Model.js">
+    <entry file="file://D:/Cours/SUPINFO/M1/Projects/engine payant/examples/13.3-texturemap-sections/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="27" selection-start="475" selection-end="475" vertical-scroll-proportion="0.7100737">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.1931217">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="29" selection-start="313" selection-end="313" vertical-scroll-proportion="0.13492064">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="48" selection-start="777" selection-end="777" vertical-scroll-proportion="1.3913044">
+          <folding />
         </state>
       </provider>
     </entry>
