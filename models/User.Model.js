@@ -27,6 +27,26 @@ var mongoose=require('./getMongoose.js').mongoose,
             required: true,
             unique : false,
             min : 18
+        },
+        type : {
+            type : String,
+            required : true,
+            unique: false
+        },
+        money : {
+            type : Number,
+            required : true,
+            unique : false
+        },
+        location : {
+            type : String,
+            required : true,
+            unique : false
+        },
+        level : {
+            type : Number,
+            required : true,
+            unique : false
         }
     }),
 
