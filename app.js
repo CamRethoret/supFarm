@@ -54,4 +54,28 @@ io.sockets.on('connection', function(socket) {
             socket.emit('getTiles', tiles);
         }
     });
+
+    socket.on('getTile', function(position) {
+        var query = Tile.findOne({ "position" : position });
+
+        query.exec(function(error, tile) {
+            if(error) { console.log(error); }
+            else {
+                socket.emit('returnTile', tile);
+            }
+        });
+    });
+
+    socket.on('assignTileToPlayer', function(params) {
+
+        Tile.findById(params.tile_id, function(error, tile) {
+            if(error) { console.log(error); }
+            else {
+                tile.status = params.player;
+                tile.save();
+                socket.emit('tileCaptured');
+            }
+        });
+
+    });
 })

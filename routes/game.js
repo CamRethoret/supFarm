@@ -31,7 +31,5 @@ exports.generateTile = function(req,res) {
         }
     }
 
-
-
     res.redirect('/game');
 };

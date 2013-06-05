@@ -4,6 +4,7 @@ html
         title= title
         link(rel='stylesheet', href='/stylesheets/bootstrap.css')
         link(rel='stylesheet', href='/stylesheets/supfarm.css')
+
         script(src='/socket.io/socket.io.js')
         script
             var igeRoot = '/engine/';
@@ -30,11 +31,11 @@ html
                                     b(class='caret')
                                 ul(class='dropdown-menu', role='menu', aria-labelledby='dropBuildings')
                                     li
-                                        a(href='#') Silo
+                                        a(href='#', class="build-silo") Silo
                                     li
-                                        a(href='#') Barn
+                                        a(href='#', class="build-barn") Barn
                                     li
-                                        a(href='#') Cold Storage
+                                        a(href='#', class="build-cold") Cold Storage
                             li(class="dropdown")
                                 a(class='dropdown-toggle', id='dropGrowings', data-toggle='dropdown', data-target='#') Growings
                                     b(class='caret')
