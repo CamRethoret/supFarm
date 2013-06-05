@@ -10,6 +10,23 @@ exports.login = function(req, res){
   });
 };
 
+exports.logUser = function(req,res) {
+    var User = require('../models/User.Model.js').User;
+
+    User.findOne({ "email" : req.body.email, "password" : req.body.password }, function(error, user) {
+        if(error) { console.log(error); }
+        else {
+            if(user != null) {
+                req.session.user_id = user._id;
+                res.redirect('/game');
+            }
+            else {
+                res.send('Bad user/pass');
+            }
+        }
+    });
+};
+
 exports.signUp=function(req, res){
   res.render('signUp',
       {

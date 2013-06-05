@@ -204,6 +204,10 @@ var Client = IgeClass.extend({
                                 self.menuBar.destroy();
                             }
                         });
+
+                        socket.on('getUserId', function(user) {
+                            console.log(user);
+                        });
                     });
                 }
             });

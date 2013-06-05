@@ -15,6 +15,7 @@ var express = require('express')
 var app = express();
 var server = http.createServer(app);
 var io = require('socket.io').listen(server);
+var store = new express.session.MemoryStore;
 
 // all environments
 app.set('port', process.env.PORT || port);
@@ -25,18 +26,30 @@ app.set('view engine', 'jade');
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(express.bodyParser());
+app.use(express.cookieParser());
+app.use(express.session({secret : "DaFack1ngS3cr3t!", store : store}));
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+function checkAuth(req, res, next) {
+    if(req.session != undefined && !req.session.user_id) {
+        res.redirect('/login');
+    } else {
+        next();
+    }
+}
+
 app.get('/', routes.index);
-app.get('/game', game.game);
-app.get('/generateTile', game.generateTile);
+app.get('/game', checkAuth, game.game);
+app.get('/generateTile', checkAuth, game.generateTile);
 app.get('/login', auth.login);
+app.post('/login', auth.logUser);
 app.get('/signUp', auth.signUp);
 app.post('/signUp', auth.register);
 
@@ -78,4 +91,6 @@ io.sockets.on('connection', function(socket) {
         });
 
     });
+
+    //socket.emit('getUserId', req.session.user_id);
 })
