@@ -3,14 +3,14 @@
 var mongoose=require('./getMongoose.js').mongoose,
     TileSchema = mongoose.Schema({
         status : {                      // a qui appartient la case (ID ou NULL)
-            type : Number,
+            type : String,
             required: true,
             unique : false
         },
         position : {
             type : String,
             required : true,
-
+            unique : true
         },
         humidity : {
             type : Number,
@@ -45,11 +45,17 @@ var mongoose=require('./getMongoose.js').mongoose,
             min : 0,
             max : 100
         },
-        growing_id : {
-            type: Number,
+        growing : {
+            type: String,
             required : false,
             unique : false,
             default: null
+        },
+        building : {
+            type : String,
+            required : false,
+            unique : false,
+            default : null
         }
     }),
 

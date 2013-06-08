@@ -8,11 +8,38 @@ var Client = IgeClass.extend({
 		var self = this;
 		this.obj = [];
 
-        var gameTexture = [];
+        self.gameTexture = {};
 
-        gameTexture[0] = new IgeCellSheet('../assets/textures/tiles/iso_tiles.png',11,1);
-        gameTexture[1] = new IgeTexture('../assets/textures/buildings/barn.png');
-        gameTexture[2] = new IgeTexture('../assets/textures/buildings/cold_storage.png');
+        self.gameTexture.iso_tiles = new IgeCellSheet('../assets/textures/tiles/iso_tiles.png',11,1);
+
+        self.gameTexture.barn = new IgeTexture('../assets/textures/buildings/barn.png');
+        self.gameTexture.cold_storage = new IgeTexture('../assets/textures/buildings/cold_storage.png');
+        self.gameTexture.silo = new IgeTexture('../assets/textures/buildings/silo.png');
+
+        self.gameTexture.tomatoes = new IgeTexture('../images/tomatoes.png');
+        self.gameTexture.tomatoes_level1 = new IgeTexture('../assets/textures/tiles/tomatoes_level1.png');
+        self.gameTexture.tomatoes_level2 = new IgeTexture('../assets/textures/tiles/tomatoes_level2.png');
+        self.gameTexture.tomatoes_level3 = new IgeTexture('../assets/textures/tiles/tomatoes_level3.png');
+        self.gameTexture.tomatoes_level4 = new IgeTexture('../assets/textures/tiles/tomatoes_level4.png');
+
+        self.gameTexture.corn = new IgeTexture('../images/corn.png');
+        self.gameTexture.corn_level1 = new IgeTexture('../assets/textures/tiles/corn_level1.png');
+        self.gameTexture.corn_level2 = new IgeTexture('../assets/textures/tiles/corn_level2.png');
+        self.gameTexture.corn_level3 = new IgeTexture('../assets/textures/tiles/corn_level3.png');
+        self.gameTexture.corn_level4 = new IgeTexture('../assets/textures/tiles/corn_level4.png');
+
+        self.gameTexture.wheat = new IgeTexture('../images/wheat.png');
+        self.gameTexture.wheat_level1 = new IgeTexture('../assets/textures/tiles/wheat_level1.png');
+        self.gameTexture.wheat_level2 = new IgeTexture('../assets/textures/tiles/wheat_level2.png');
+        self.gameTexture.wheat_level3 = new IgeTexture('../assets/textures/tiles/wheat_level3.png');
+        //self.gameTexture.wheat_level4 = new IgeTexture('../assets/textures/tiles/wheat_level4.png');
+
+        self.userId = null;
+        self.userLevel = null;
+
+        self.cellEnemy = 5;
+        self.cellPossesed = 4;
+        self.cellNeutral = 3;
 
         ige.on('texturesLoaded', function() {
             // Create the HTML canvas
@@ -47,12 +74,6 @@ var Client = IgeClass.extend({
                         .highlightOccupied(true)
                         .mount(self.mainScene);
 
-                    self.uiScene = new IgeScene2d()
-                        .id('uiScene')
-                        .depth(3)
-                        .ignoreCamera(true)
-                        .mount(self.mainScene);
-
                     // Create the main viewport
                     self.vp1 = new IgeViewport()
                         .id('vp1')
@@ -85,134 +106,437 @@ var Client = IgeClass.extend({
                     // tracking smoothing turned on (100)
                     self.vp1.camera.trackTranslate(self.player, 100);
 
-                    var texIndex = self.textureMap1.addTexture(gameTexture[0]);
+                    $('.build-silo').on('click', function() {
+                        self.isMovingElementUndefined();
+                        self.movingElement = new ClientObjects.Silo(self.objectLayer, self.objectLayer.mouseToTile().x, self.objectLayer.mouseToTile().y);
+                        $('div.container.game').append('<div class="iso-popup building"><h4><a id="cancel">Cancel</a></h4></div>');
+                        self.cancelBuildingElement();
+                    });
 
-                    var socket = io.connect();
+                    $('.build-barn').on('click', function() {
+                        self.isMovingElementUndefined();
+                        self.movingElement = new ClientObjects.Barn(self.objectLayer, self.objectLayer.mouseToTile().x, self.objectLayer.mouseToTile().y);
+                        $('div.container.game').append('<div class="iso-popup building"><h4><a id="cancel">Cancel</a></h4></div>');
+                        self.cancelBuildingElement();
+                    });
 
-                    socket.on('getTiles', function(tiles) {
+                    $('.build-cold').on('click', function() {
+                        self.isMovingElementUndefined();
+                        self.movingElement = new ClientObjects.Cold(self.objectLayer, self.objectLayer.mouseToTile().x, self.objectLayer.mouseToTile().y);
+                        $('div.container.game').append('<div class="iso-popup building"><h4><a id="cancel">Cancel</a></h4></div>');
+                        self.cancelBuildingElement();
+                    });
 
-                        for(var tile in tiles) {
-                            var position = tiles[tile].position.split(",");
-                            var textureCell = 3;
-                            if(tiles[tile].status == 1) {
-                                self.textureMap1.paintTile(position[0], position[1], texIndex, 4);
-                            } else {
-                                self.textureMap1.paintTile(position[0], position[1], texIndex, textureCell);
+                    $('.grow-tomatoes').on('click', function() {
+                        self.isMovingElementUndefined();
+                        self.movingElement = new ClientObjects.Tomatoes_Level1(self.objectLayer, self.objectLayer.mouseToTile().x, self.objectLayer.mouseToTile().y);
+                        $('div.container.game').append('<div class="iso-popup building"><h4><a id="cancel">Cancel</a></h4></div>');
+                        self.cancelBuildingElement();
+                    });
+
+                    $('.grow-corn').on('click', function() {
+                        self.isMovingElementUndefined();
+                        self.movingElement = new ClientObjects.Corn_Level1(self.objectLayer, self.objectLayer.mouseToTile().x, self.objectLayer.mouseToTile().y);
+                        $('div.container.game').append('<div class="iso-popup building"><h4><a id="cancel">Cancel</a></h4></div>');
+                        self.cancelBuildingElement();
+                    });
+
+                    $('.grow-wheat').on('click', function() {
+                        self.isMovingElementUndefined();
+                        self.movingElement = new ClientObjects.Wheat_Level1(self.objectLayer, self.objectLayer.mouseToTile().x, self.objectLayer.mouseToTile().y);
+                        $('div.container.game').append('<div class="iso-popup building"><h4><a id="cancel">Cancel</a></h4></div>');
+                        self.cancelBuildingElement();
+                    });
+
+                    self.enableMovingElement();
+
+                    self.texIndex = self.textureMap1.addTexture(self.gameTexture.iso_tiles);
+
+                    self.socket = io.connect();
+
+                    // On récupère l'id user et on le sauvegarde en mémoire
+                    self.socket.on('getUserId', function(user_id) {
+
+                        self.userId = user_id;
+
+                        self.socket.emit('getUserLevel', self.userId);
+                        self.socket.on('returnUserLevel', function(user_level) {
+                            self.userLevel = user_level;
+                            $('.nav.pull-right .level').text('Level ' + self.userLevel);
+                        })
+
+                        self.refreshTileOnUpdate();
+
+
+                        // On récupère toutes les tiles et on affiche si user, enemy ou neutral
+                        self.socket.on('getTiles', function(tiles) {
+
+                            for(var tile in tiles) {
+                                var position = tiles[tile].position.split(",");
+
+                                if(tiles[tile].status == user_id) {
+                                    self.textureMap1.paintTile(position[0], position[1], self.texIndex, self.cellPossesed);
+                                } else if(tiles[tile].status == 0) {
+                                    self.textureMap1.paintTile(position[0], position[1], self.texIndex, self.cellNeutral);
+                                } else {
+                                    self.textureMap1.paintTile(position[0], position[1], self.texIndex, self.cellEnemy);
+                                }
+
+                                if(tiles[tile].building != null) {
+                                    switch(tiles[tile].building) {
+                                        case 'Silo':
+                                            new ClientObjects.Silo(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Barn':
+                                            new ClientObjects.Barn(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Cold':
+                                            new ClientObjects.Cold(self.objectLayer, position[0], position[1]);
+                                            break;
+                                    }
+                                }
+                                if(tiles[tile].growing != null) {
+                                    switch(tiles[tile].growing) {
+                                        case 'Tomatoes':
+                                            new ClientObjects.Tomatoes(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Tomatoes_Level1':
+                                            new ClientObjects.Tomatoes_Level1(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Tomatoes_Level2':
+                                            new ClientObjects.Tomatoes_Level2(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Tomatoes_Level3':
+                                            new ClientObjects.Tomatoes_Level3(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Tomatoes_Level4':
+                                            new ClientObjects.Tomatoes_Level4(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Corn':
+                                            new ClientObjects.Corn(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Corn_Level1':
+                                            new ClientObjects.Corn_Level1(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Corn_Level2':
+                                            new ClientObjects.Corn_Level2(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Corn_Level3':
+                                            new ClientObjects.Corn_Level3(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Corn_Level4':
+                                            new ClientObjects.Corn_Level4(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Wheat':
+                                            new ClientObjects.Wheat(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Wheat_Level1':
+                                            new ClientObjects.Wheat_Level1(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Wheat_Level2':
+                                            new ClientObjects.Wheat_Level2(self.objectLayer, position[0], position[1]);
+                                            break;
+                                        case 'Wheat_Level3':
+                                            new ClientObjects.Wheat_Level3(self.objectLayer, position[0], position[1]);
+                                            break;
+                                    }
+                                }
                             }
-                        }
+                        });
                     });
 
                     ige.input.on('mouseUp', function (event, x, y, button) {
 
-                        // Si le menu existe deja, on le supprime
-                        if(self.uiCaptureTileButton != undefined || self.uiCaptureTileButton != null ) {
-                            self.uiCaptureTileButton.destroy();
-                        }
-                        if(self.uiCancelTileButton != undefined || self.uiCancelTileButton != null ) {
-                            self.uiCancelTileButton.destroy();
-                        }
-                        if(self.menuBar != undefined || self.menuBar != null) {
-                            self.menuBar.destroy();
-                        }
-
                         // On récupère les coordonnées du clic de l'utilisateur
-                        var tilePoint = self.textureMap1.mouseTileWorldXY().to2d();
-                        var position = tilePoint.x / 40 + ',' + tilePoint.y / 40;
+                        var tileObjectLayer = self.objectLayer.mouseToTile();
+                        var pos = tileObjectLayer.x + ',' + tileObjectLayer.y;
 
-                        // On créer le menu
-                        self.menuBar = new IgeUiEntity()
-                            .id('menuBar')
-                            .depth(10)
-                            .backgroundColor('#333333')
-                            .left(0)
-                            .top(50)
-                            .width('20%')
-                            .height(100)
-                            .mouseDown(function () { if (ige.client.data('cursorMode') !== 'panning') { ige.input.stopPropagation(); } })
-                            .mouseUp(function () { if (ige.client.data('cursorMode') !== 'panning') { ige.input.stopPropagation(); } })
-                            .mouseMove(function () { if (ige.client.data('cursorMode') !== 'panning') { ige.input.stopPropagation(); } })
-                            .mount(self.uiScene);
+                        self.socket.emit('getTile', pos);
+                        self.socket.on('returnTile', function(tile) {
+                            if(tile.status == self.userId) {
 
-                        self.uiCaptureTileButton = new IgeUiButton()
-                            .id('uiCaptureTileButton')
-                            .depth(3)
-                            .left(0)
-                            .top(0)
-                            .width('100%')
-                            .height('50%')
-                            .mouseDown(function () {
-                                ige.input.stopPropagation();
-                            })
-                            .mouseUp(function () {
-                                ige.client.data('cursorMode', 'select');
-                                this.backgroundColor('#00baff');
-
-                                socket.emit('getTile', position);
-                                socket.on('returnTile', function(tile) {
-                                    socket.emit('assignTileToPlayer', { 'player' : 1, 'tile_id' : tile._id });
+                                $('div.container.game').append('<div class="iso-popup information"><h3>Informations</h3><div class="row"><div class="span1"><h5>Health</h5><span class="health badge badge-success">' + tile.health + '</span></div><div class="span1"><h5>Humidity</h5><span class="humidity badge badge-success">' + tile.humidity + '</span></div><div class="span1"><h5>Fertility</h5><span class="fertility badge badge-success">' + tile.fertility + '</span></div><a class="close-information">Close</a></div>');
+                                $('.iso-popup.information .close-information').on('click', function() {
+                                    $('.iso-popup.information').toggle("slide", function() {
+                                        $('.iso-popup.information').remove();
+                                    });
                                 });
 
-                                ige.input.stopPropagation();
-                            })
-                            .mount(self.menuBar);
+                                if(self.movingElement != undefined) {
 
-                        self.uiCaptureText = new IgeFontEntity()
-                            .id('uiCaptureText')
-                            .depth(4)
-                            .text('Capture this tile !')
-                            .width('100%')
-                            .height('100%')
-                            .mount(self.uiCaptureTileButton);
+                                    self.socket.emit('buildOnTile', { 'tile' : tile, 'build' : self.movingElement.classId(), 'type' : self.movingElement.type });
 
-                        self.uiCancelTileButton = new IgeUiButton()
-                            .id('uiCancelTileButton')
-                            .left(0)
-                            .top(50)
-                            .width('100%')
-                            .height('50%')
-                            .mouseDown(function () {
-                                ige.input.stopPropagation();
-                            })
-                            .mouseUp(function () {
-                                ige.client.data('cursorMode', 'select');
+                                    self.socket.on('returnBuildOnTile', function(status) {
+                                        if(status == 'success') {
+                                            self.movingElement.removeFromMap(self.objectLayer);
+                                            self.objectLayer.occupyTile(tileObjectLayer.x, tileObjectLayer.y, self.movingElement.widthInTile, self.movingElement.heightInTile, 1);
 
-                                if(self.uiCaptureTileButton != undefined || self.uiCaptureTileButton != null ) {
-                                    self.uiCaptureTileButton.destroy();
+                                            switch(self.movingElement.classId()){
+                                                case "Silo":
+                                                    new ClientObjects.Silo(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Barn":
+                                                    new ClientObjects.Barn(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Cold":
+                                                    new ClientObjects.Cold(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Tomatoes":
+                                                    new ClientObjects.Tomatoes(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Tomatoes_Level1":
+                                                    new ClientObjects.Tomatoes_Level1(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Tomatoes_Level2":
+                                                    new ClientObjects.Tomatoes_Level2(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Tomatoes_Level3":
+                                                    new ClientObjects.Tomatoes_Level3(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Tomatoes_Level4":
+                                                    new ClientObjects.Tomatoes_Level4(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Corn":
+                                                    new ClientObjects.Corn(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Corn_Level1":
+                                                    new ClientObjects.Corn_Level1(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Corn_Level2":
+                                                    new ClientObjects.Corn_Level2(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Corn_Level3":
+                                                    new ClientObjects.Corn_Level3(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Corn_Level4":
+                                                    new ClientObjects.Corn_Level4(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Wheat":
+                                                    new ClientObjects.Wheat(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Wheat_Level1":
+                                                    new ClientObjects.Wheat_Level1(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Wheat_Level2":
+                                                    new ClientObjects.Wheat_Level2(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                                case "Wheat_Level3":
+                                                    new ClientObjects.Wheat_Level3(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.removeIsoPopup();
+                                                    break;
+                                            }
+
+                                            self.movingElement = undefined;
+                                        }
+                                    });
                                 }
-                                if(self.uiCancelTileButton != undefined || self.uiCancelTileButton != null ) {
-                                    self.uiCancelTileButton.destroy();
+                            }
+
+                            if(tile.status != self.userId) {
+                                if($('div.iso-popup.information').length > 0) {
+                                    $('.iso-popup.information').toggle("slide", function() {
+                                        $('.iso-popup.information').remove();
+                                    });
                                 }
-                                if(self.menuBar != undefined || self.menuBar != null) {
-                                    self.menuBar.destroy();
-                                }
+                                $('div.container.game').append('<div class="iso-popup capture"><h4><a id="capture-tile">Capture this tile !</a></h4><h4><a id="cancel">Cancel</a></h4></div>');
+                                $('.iso-popup #cancel').on('click', function() {
+                                    $('.iso-popup.capture').toggle("slide", function() {
+                                        $('div.iso-popup.capture').remove();
+                                    });
+                                });
+                                $('.iso-popup #capture-tile').on('click', function() {
+                                    self.socket.emit('assignTileToPlayer', { 'player' : self.userId, 'tile_id' : tile._id });
 
-                                ige.input.stopPropagation();
-                            })
-                            .mount(self.menuBar);
+                                    self.socket.on('tileCaptured', function() {
+                                        self.socket.emit('calculateUserLevel', self.userId);
 
-                        socket.on('tileCaptured', function() {
-                            alert('You have captured the tile !');
-                            self.textureMap1.paintTile(tilePoint.x / 40, tilePoint.y / 40, texIndex, 4);
+                                        self.socket.on('returnUserLevel', function(user_level) {
+                                            $('.iso-popup.capture').html("<h4>You have captured the tile !<br/>You are now level " + user_level + ".</h4>");
+                                            self.textureMap1.paintTile(tileObjectLayer.x, tileObjectLayer.y, self.texIndex, 4);
 
-                            if(self.uiCaptureTileButton != undefined || self.uiCaptureTileButton != null ) {
-                                self.uiCaptureTileButton.destroy();
+                                            $('.iso-popup.capture').delay(3000).toggle("slide", function() {
+                                                $('.iso-popup.capture').remove();
+                                            });
+                                        });
+                                    });
+                                });
                             }
-                            if(self.uiCancelTileButton != undefined || self.uiCancelTileButton != null ) {
-                                self.uiCancelTileButton.destroy();
-                            }
-                            if(self.menuBar != undefined || self.menuBar != null) {
-                                self.menuBar.destroy();
-                            }
-                        });
-
-                        socket.on('getUserId', function(user) {
-                            console.log(user);
                         });
                     });
                 }
             });
         });
-	}
+	},
+    enableMovingElement: function() {
+        var self = this;
+        this.objectLayer.mouseMove(function() {
+            if(self.movingElement != undefined) {
+                self.movingElement.removeFromMap(self.objectLayer);
+
+                var point = self.objectLayer.mouseToTile();
+
+                if(self.objectLayer.isTileOccupied(point.x, point.y, self.movingElement.widthInTile, self.movingElement.heightInTile, 1) == false) {
+                    switch(self.movingElement.classId()) {
+                        case "Silo":
+                            self.movingElement = new ClientObjects.Silo(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Barn":
+                            self.movingElement = new ClientObjects.Barn(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Cold":
+                            self.movingElement = new ClientObjects.Cold(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Tomatoes":
+                            self.movingElement = new ClientObjects.Tomatoes(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Tomatoes_Level1":
+                            self.movingElement = new ClientObjects.Tomatoes_Level1(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Tomatoes_Level2":
+                            self.movingElement = new ClientObjects.Tomatoes_Level2(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Tomatoes_Level3":
+                            self.movingElement = new ClientObjects.Tomatoes_Level3(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Tomatoes_Level4":
+                            self.movingElement = new ClientObjects.Tomatoes_Level4(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Corn":
+                            self.movingElement = new ClientObjects.Corn(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Corn_Level1":
+                            self.movingElement = new ClientObjects.Corn_Level1(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Corn_Level2":
+                            self.movingElement = new ClientObjects.Corn_Level2(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Corn_Level3":
+                            self.movingElement = new ClientObjects.Corn_Level3(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Corn_Level4":
+                            self.movingElement = new ClientObjects.Corn_Level4(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Wheat":
+                            self.movingElement = new ClientObjects.Wheat(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Wheat_Level1":
+                            self.movingElement = new ClientObjects.Wheat_Level1(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Wheat_Level2":
+                            self.movingElement = new ClientObjects.Wheat_Level2(self.objectLayer, point.x, point.y);
+                            break;
+                        case "Wheat_Level3":
+                            self.movingElement = new ClientObjects.Wheat_Level3(self.objectLayer, point.x, point.y);
+                            break;
+                    }
+                }
+
+            }
+        });
+    },
+    cancelBuildingElement: function() {
+        var self = this;
+        $('.iso-popup #cancel').on('click', function() {
+            if(self.movingElement != undefined) {
+                self.movingElement.removeFromMap(self.objectLayer);
+                self.movingElement = undefined;
+            }
+            $('.iso-popup').toggle("slide", function() {
+                $('.iso-popup').remove();
+            });
+        });
+    },
+    removeIsoPopup: function() {
+        $('.iso-popup').toggle("slide", function() {
+            $('.iso-popup').remove();
+        });
+    },
+    isMovingElementUndefined: function() {
+        if(self.movingElement != undefined) {
+            self.movingElement.removeFromMap(self.objectLayer);
+            self.movingElement = undefined;
+        }
+    },
+    refreshTileOnUpdate: function() {
+        var self = this;
+        self.socket.on('refreshTile', function(tile) {
+            var position = tile.position.split(',');
+
+            if(tile.status == self.userId) {
+                self.textureMap1.paintTile(position[0], position[1], self.texIndex, self.cellPossesed);
+            } else if(tile.status == 0) {
+                self.textureMap1.paintTile(position[0], position[1], self.texIndex, self.cellNeutral);
+            } else {
+                self.textureMap1.paintTile(position[0], position[1], self.texIndex, self.cellEnemy);
+            }
+
+
+            if(tile.growing != null) {
+                console.log(tile.growing);
+
+                switch(tile.growing) {
+                    case "Tomatoes":
+                        new ClientObjects.Tomatoes(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Tomatoes_Level1":
+                        new ClientObjects.Tomatoes_Level1(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Tomatoes_Level2":
+                        new ClientObjects.Tomatoes_Level2(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Tomatoes_Level3":
+                        new ClientObjects.Tomatoes_Level3(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Tomatoes_Level4":
+                        new ClientObjects.Tomatoes_Level4(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Corn":
+                        new ClientObjects.Corn(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Corn_Level1":
+                        new ClientObjects.Corn_Level1(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Corn_Level2":
+                        new ClientObjects.Corn_Level2(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Corn_Level3":
+                        new ClientObjects.Corn_Level3(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Corn_Level4":
+                        new ClientObjects.Corn_Level4(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Wheat":
+                        new ClientObjects.Wheat(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Wheat_Level1":
+                        new ClientObjects.Wheat_Level1(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Wheat_Level2":
+                        new ClientObjects.Wheat_Level2(self.objectLayer, position[0], position[1]);
+                        break;
+                    case "Wheat_Level3":
+                        new ClientObjects.Wheat_Level3(self.objectLayer, position[0], position[1]);
+                        break;
+                }
+            }
+        });
+    }
 });
 
 if (typeof(module) !== 'undefined' && typeof(module.exports) !== 'undefined') { module.exports = Client; }

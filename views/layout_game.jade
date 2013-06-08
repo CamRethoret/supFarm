@@ -20,35 +20,36 @@ html
                     a.brand(href='/') supFarm
                     .nav-collapse.collapse
                         ul.nav
-                            li.active
-                                a(href='/') Home
                             li
-                                a(href='/signUp') Sign up
-                            li
-                                a(href='/login') Login
+                                a(href='/logout') Logout
                             li(class='dropdown')
                                 a(class="dropdown-toggle", id='dropBuildings', data-toggle='dropdown', data-target='#') Buildings
                                     b(class='caret')
                                 ul(class='dropdown-menu', role='menu', aria-labelledby='dropBuildings')
                                     li
-                                        a(href='#', class="build-silo") Silo
+                                        a(class="build-silo")
+                                            span Silo
                                     li
-                                        a(href='#', class="build-barn") Barn
+                                        a(class="build-barn")
+                                            span Barn
                                     li
-                                        a(href='#', class="build-cold") Cold Storage
+                                        a(class="build-cold")
+                                            span Cold Storage
                             li(class="dropdown")
                                 a(class='dropdown-toggle', id='dropGrowings', data-toggle='dropdown', data-target='#') Growings
                                     b(class='caret')
                                 ul(class='dropdown-menu', role='menu', aria-labelledby='dropGrowings')
                                     li
-                                        a(href='#', class="grow-tomatoes")
+                                        a(class="grow-tomatoes")
                                             span Tomatoes
                                     li
-                                        a(href='#', class="grow-corn")
+                                        a(class="grow-corn")
                                             span Corn
                                     li
-                                        a(href='#', class="grow-wheat")
+                                        a(class="grow-wheat")
                                             span Wheat
+                        ul.nav.pull-right
+                            li(class="level")
         div.container
             block content
 

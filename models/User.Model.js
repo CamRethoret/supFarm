@@ -47,6 +47,19 @@ var mongoose=require('./getMongoose.js').mongoose,
             type : Number,
             required : true,
             unique : false
+        },
+        difficulty : {
+            type : String,
+            required : true,
+            unique : false,
+            enum : ['Normal', 'Hard']
+        },
+        health : {
+            type : Number,
+            required : true,
+            unique : false,
+            min : 0,
+            max : 100
         }
     }),
 

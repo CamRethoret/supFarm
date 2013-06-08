@@ -27,6 +27,11 @@ exports.logUser = function(req,res) {
     });
 };
 
+exports.logout=function(req,res) {
+    delete req.session.user_id;
+    res.redirect('/');
+}
+
 exports.signUp=function(req, res){
   res.render('signUp',
       {
@@ -42,6 +47,7 @@ exports.register=function(req, res){
     console.log(req.body.email);
     console.log(req.body.age);
     console.log(req.body.password);
+    console.log(req.body.difficulty);
     var User = require('../models/User.Model.js').User,
     newUser = new User({
         "first_name":   req.body.first_name,
@@ -52,7 +58,9 @@ exports.register=function(req, res){
         "type":         "player",
         "money":        0,
         "location":     "1,1",
-        "level":        1
+        "level":        0,
+        "difficulty":   req.body.difficulty,
+        "health":       100
     })
     newUser.save(function(error, user){
         if(error){console.log(error);}
