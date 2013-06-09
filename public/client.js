@@ -41,6 +41,8 @@ var Client = IgeClass.extend({
         self.cellPossesed = 4;
         self.cellNeutral = 3;
 
+        self.objectBuildGrow = {};
+
         ige.on('texturesLoaded', function() {
             // Create the HTML canvas
             ige.createFrontBuffer(true);
@@ -185,59 +187,59 @@ var Client = IgeClass.extend({
                                 if(tiles[tile].building != null) {
                                     switch(tiles[tile].building) {
                                         case 'Silo':
-                                            new ClientObjects.Silo(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Silo(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Barn':
-                                            new ClientObjects.Barn(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Barn(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Cold':
-                                            new ClientObjects.Cold(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Cold(self.objectLayer, position[0], position[1]);
                                             break;
                                     }
                                 }
                                 if(tiles[tile].growing != null) {
                                     switch(tiles[tile].growing) {
                                         case 'Tomatoes':
-                                            new ClientObjects.Tomatoes(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Tomatoes(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Tomatoes_Level1':
-                                            new ClientObjects.Tomatoes_Level1(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Tomatoes_Level1(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Tomatoes_Level2':
-                                            new ClientObjects.Tomatoes_Level2(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Tomatoes_Level2(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Tomatoes_Level3':
-                                            new ClientObjects.Tomatoes_Level3(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Tomatoes_Level3(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Tomatoes_Level4':
-                                            new ClientObjects.Tomatoes_Level4(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Tomatoes_Level4(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Corn':
-                                            new ClientObjects.Corn(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Corn(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Corn_Level1':
-                                            new ClientObjects.Corn_Level1(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Corn_Level1(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Corn_Level2':
-                                            new ClientObjects.Corn_Level2(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Corn_Level2(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Corn_Level3':
-                                            new ClientObjects.Corn_Level3(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Corn_Level3(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Corn_Level4':
-                                            new ClientObjects.Corn_Level4(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Corn_Level4(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Wheat':
-                                            new ClientObjects.Wheat(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Wheat(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Wheat_Level1':
-                                            new ClientObjects.Wheat_Level1(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Wheat_Level1(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Wheat_Level2':
-                                            new ClientObjects.Wheat_Level2(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Wheat_Level2(self.objectLayer, position[0], position[1]);
                                             break;
                                         case 'Wheat_Level3':
-                                            new ClientObjects.Wheat_Level3(self.objectLayer, position[0], position[1]);
+                                            self.objectBuildGrow[tiles[tile].position] =  new ClientObjects.Wheat_Level3(self.objectLayer, position[0], position[1]);
                                             break;
                                     }
                                 }
@@ -273,71 +275,71 @@ var Client = IgeClass.extend({
 
                                             switch(self.movingElement.classId()){
                                                 case "Silo":
-                                                    new ClientObjects.Silo(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Silo(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Barn":
-                                                    new ClientObjects.Barn(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Barn(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Cold":
-                                                    new ClientObjects.Cold(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Cold(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Tomatoes":
-                                                    new ClientObjects.Tomatoes(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Tomatoes(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Tomatoes_Level1":
-                                                    new ClientObjects.Tomatoes_Level1(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Tomatoes_Level1(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Tomatoes_Level2":
-                                                    new ClientObjects.Tomatoes_Level2(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Tomatoes_Level2(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Tomatoes_Level3":
-                                                    new ClientObjects.Tomatoes_Level3(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Tomatoes_Level3(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Tomatoes_Level4":
-                                                    new ClientObjects.Tomatoes_Level4(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Tomatoes_Level4(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Corn":
-                                                    new ClientObjects.Corn(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Corn(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Corn_Level1":
-                                                    new ClientObjects.Corn_Level1(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Corn_Level1(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Corn_Level2":
-                                                    new ClientObjects.Corn_Level2(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Corn_Level2(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Corn_Level3":
-                                                    new ClientObjects.Corn_Level3(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Corn_Level3(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Corn_Level4":
-                                                    new ClientObjects.Corn_Level4(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Corn_Level4(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Wheat":
-                                                    new ClientObjects.Wheat(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Wheat(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Wheat_Level1":
-                                                    new ClientObjects.Wheat_Level1(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Wheat_Level1(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Wheat_Level2":
-                                                    new ClientObjects.Wheat_Level2(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Wheat_Level2(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                                 case "Wheat_Level3":
-                                                    new ClientObjects.Wheat_Level3(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
+                                                    self.objectBuildGrow[pos] = new ClientObjects.Wheat_Level3(self.objectLayer, tileObjectLayer.x, tileObjectLayer.y);
                                                     self.removeIsoPopup();
                                                     break;
                                             }
@@ -486,52 +488,58 @@ var Client = IgeClass.extend({
                 self.textureMap1.paintTile(position[0], position[1], self.texIndex, self.cellEnemy);
             }
 
-
             if(tile.growing != null) {
-                console.log(tile.growing);
+                console.log('Growing type : ' + tile.growing);
+                console.log('------------------------------');
+                console.log('Tile position : ' + tile.position);
+                console.log('------------------------------');
+                console.log(self.objectBuildGrow[tile.position]);
+                console.log('------------------------------');
+
+                self.objectBuildGrow[tile.position].removeFromMap(self.objectLayer);
 
                 switch(tile.growing) {
                     case "Tomatoes":
-                        new ClientObjects.Tomatoes(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Tomatoes(self.objectLayer, position[0], position[1]);
                         break;
                     case "Tomatoes_Level1":
-                        new ClientObjects.Tomatoes_Level1(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Tomatoes_Level1(self.objectLayer, position[0], position[1]);
                         break;
                     case "Tomatoes_Level2":
-                        new ClientObjects.Tomatoes_Level2(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Tomatoes_Level2(self.objectLayer, position[0], position[1]);
                         break;
                     case "Tomatoes_Level3":
-                        new ClientObjects.Tomatoes_Level3(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Tomatoes_Level3(self.objectLayer, position[0], position[1]);
                         break;
                     case "Tomatoes_Level4":
-                        new ClientObjects.Tomatoes_Level4(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Tomatoes_Level4(self.objectLayer, position[0], position[1]);
                         break;
                     case "Corn":
-                        new ClientObjects.Corn(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Corn(self.objectLayer, position[0], position[1]);
                         break;
                     case "Corn_Level1":
-                        new ClientObjects.Corn_Level1(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Corn_Level1(self.objectLayer, position[0], position[1]);
                         break;
                     case "Corn_Level2":
-                        new ClientObjects.Corn_Level2(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Corn_Level2(self.objectLayer, position[0], position[1]);
                         break;
                     case "Corn_Level3":
-                        new ClientObjects.Corn_Level3(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Corn_Level3(self.objectLayer, position[0], position[1]);
                         break;
                     case "Corn_Level4":
-                        new ClientObjects.Corn_Level4(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Corn_Level4(self.objectLayer, position[0], position[1]);
                         break;
                     case "Wheat":
-                        new ClientObjects.Wheat(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Wheat(self.objectLayer, position[0], position[1]);
                         break;
                     case "Wheat_Level1":
-                        new ClientObjects.Wheat_Level1(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Wheat_Level1(self.objectLayer, position[0], position[1]);
                         break;
                     case "Wheat_Level2":
-                        new ClientObjects.Wheat_Level2(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Wheat_Level2(self.objectLayer, position[0], position[1]);
                         break;
                     case "Wheat_Level3":
-                        new ClientObjects.Wheat_Level3(self.objectLayer, position[0], position[1]);
+                        self.objectBuildGrow[tile.position] = new ClientObjects.Wheat_Level3(self.objectLayer, position[0], position[1]);
                         break;
                 }
             }

@@ -13,20 +13,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.silo;
 
@@ -58,20 +50,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.barn;
 
@@ -103,20 +87,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.cold_storage;
 
@@ -149,27 +125,20 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.tomatoes;
 
             this.imageEntity = new IgeEntity()
                 .texture(texture)
                 .dimensionsFromCell()
-                .scaleTo(0.7,0.7,1)
+                .scaleTo(1,1,1)
+                .originTo(0.4,1.5,1)
                 .drawBounds(false)
                 .drawBoundsData(false)
                 .mount(this);
@@ -194,20 +163,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.tomatoes_level1;
 
@@ -240,20 +201,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.tomatoes_level2;
 
@@ -286,20 +239,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.tomatoes_level3;
 
@@ -332,20 +277,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.tomatoes_level4;
 
@@ -378,20 +315,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.corn;
 
@@ -399,7 +328,7 @@ var ClientObjects = {
                 .texture(texture)
                 .dimensionsFromCell()
                 .scaleTo(1,1,1)
-                .originTo(0.5,0.8,1)
+                .originTo(0.5,1.4,1)
                 .drawBounds(false)
                 .drawBoundsData(false)
                 .mount(this);
@@ -424,20 +353,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.corn_level1;
 
@@ -470,20 +391,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.corn_level2;
 
@@ -516,20 +429,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.corn_level3;
 
@@ -562,20 +467,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.corn_level4;
 
@@ -608,20 +505,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.wheat;
 
@@ -654,20 +543,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.wheat_level1;
 
@@ -700,20 +581,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.wheat_level2;
 
@@ -746,20 +619,12 @@ var ClientObjects = {
                 .mount(parent)
                 .size3d(this.widthInTile * parent._tileWidth, this.heightInTile * parent._tileHeight, 40)
                 .translateToTile((tileX), (tileY), 0)
-                .mouseOver(function() {
-                    this.drawBounds(true);
-                    this.drawBoundsData(true);
-                })
-                .mouseOut(function() {
-                    this.drawBounds(false);
-                    this.drawBoundsData(false);
-                })
                 .drawBounds(false)
                 .drawBoundsData(false);
 
             this.tileX = tileX;
             this.tileY = tileY;
-            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 1);
+            parent.occupyTile(this.tileX, this.tileY, this.widthInTile, this.heightInTile, 0);
 
             var texture = ige.client.gameTexture.wheat_level3;
 

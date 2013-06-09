@@ -19,6 +19,10 @@ var server = http.createServer(app);
 var io = require('socket.io').listen(server);
 var sessionStore = new express.session.MemoryStore;
 
+var Tile = require('./models/Tile.Model.js').Tile,
+    User = require('./models/User.Model.js').User,
+    Growing = require('./models/Growing.Model.js').Growing;
+
 // all environments
 app.set('port', process.env.PORT || port);
 app.set('views', __dirname + '/views');
@@ -65,108 +69,99 @@ server.listen(app.get('port'), function(){
 setInterval(function() {
     console.log('SetInterval working !');
 
-    var Tile = require('./models/Tile.Model.js').Tile,
-        Growing = require('./models/Growing.Model.js').Growing;
-
     Tile.find(function(error, tiles) {
-        for(var tile in tiles) {
+        tiles.forEach(function(tile) {
+
             var grow = null;
-            var maturity = 0;
-            var time = 0;
+            var grow_type = null;
 
-            if(tiles[tile].humidity > 0 && tiles[tile].fertility > 0) {
-
-                tiles[tile].humidity -= 2;
-                tiles[tile].fertility -= 2;
-
-                tiles[tile].health = (tiles[tile].humidity + tiles[tile].fertility) / 2;
+            if(tile.growing != null) {
+                if(tile.growing.indexOf('Tomatoes') !== -1) {
+                    grow_type = 'Tomatoes';
+                } else if(tile.growing.indexOf('Corn') !== -1) {
+                    grow_type = 'Corn';
+                } else if(tile.growing.indexOf('Wheat') !== -1) {
+                    grow_type = 'Wheat';
+                }
             }
 
-            if(tiles[tile].growing != null) {
+                if(tile.humidity > 0 && tile.fertility > 0) {
 
-                var grow_type = null;
+                    tile.humidity -= 0.5;
+                    tile.fertility -= 0.5;
 
-                if(tiles[tile].growing.indexOf('Tomatoes') !== -1) {
-                    grow_type = 'Tomatoes';
-                } else if(tiles[tile].growing.indexOf('Corn') !== -1) {
-                    grow_type = 'Corn';
-                } else if(tiles[tile].growing.indexOf('Wheat') !== -1) {
-                    grow_type = 'Wheat';
+                    tile.health = (tile.humidity + tile.fertility) / 2;
                 }
 
                 Growing.findOne({ 'type' : grow_type }, function(error, growing) {
                     if(error) console.log(error);
-                    else {
+                    else if(growing != null) {
+                        grow = growing;
+
                         // On update les differents champs
-                        time = tiles[tile].time + 10;
+                        tile.time += 10;
 
-                        if((growing.grow_rate + growing.decay_time) < time ) {
-                            grow = null;
-                            time = 0;
-                            maturity = 0;
-                        }
+                        if((grow.grow_rate + grow.decay_time) < tile.time ) {
+                            tile.growing = null;
+                            tile.time = 0;
+                            tile.maturity = 0;
+                        } else if(tile.growing != null) {
 
-                        console.log(tiles[tile].maturity);
+                            if(tile.maturity < 100) {
+                                var maturity = Math.round(((100 * tile.time) / grow.grow_rate) * 100) / 100;
 
-                        if(tiles[tile].maturity < 100) {
-                            console.log(tiles[tile].maturity + 'check !');
-                            maturity = Math.round(((100 * time) / growing.grow_rate) * 100) / 100;
-                        }
-
-                        if(tiles[tile].growing != null) {
-                            if(tiles[tile].growing.indexOf('Tomatoes') !== -1) {
-                                if(maturity >= 0 && maturity < 20) {
-                                    grow = 'Tomatoes_Level1';
-                                } else if(maturity >= 20 && maturity < 40) {
-                                    grow = 'Tomatoes_Level2';
-                                } else if(maturity >= 40 && maturity < 60) {
-                                    grow = 'Tomatoes_Level3';
-                                } else if(maturity >= 60 && maturity < 80) {
-                                    grow = 'Tomatoes_Level4';
-                                } else if(maturity >= 80 && maturity <= 100) {
-                                    grow = 'Tomatoes';
-                                }
-                            } else if(tiles[tile].growing.indexOf('Corn') !== -1) {
-                                if(maturity >= 0 && maturity < 20) {
-                                    grow = 'Corn_Level1';
-                                } else if(maturity >= 20 && maturity < 40) {
-                                    grow = 'Corn_Level2';
-                                } else if(maturity >= 40 && maturity < 60) {
-                                    grow = 'Corn_Level3';
-                                } else if(maturity >= 60 && maturity < 80) {
-                                    grow = 'Corn_Level4';
-                                } else if(maturity >= 80 && maturity <= 100) {
-                                    grow = 'Corn';
-                                }
-                            } else if(tiles[tile].growing.indexOf('Wheat') !== -1) {
-                                if(maturity >= 0 && tiles[tile].maturity < 20) {
-                                    grow = 'Wheat_Level1';
-                                } else if(maturity >= 20 && maturity < 40) {
-                                    grow = 'Wheat_Level1';
-                                } else if(maturity >= 40 && maturity < 60) {
-                                    grow = 'Wheat_Level2';
-                                } else if(maturity >= 60 && maturity < 80) {
-                                    grow = 'Wheat_Level3';
-                                } else if(maturity >= 80 && maturity <= 100) {
-                                    grow = 'Wheat';
-                                }
+                                if(maturity < 100) tile.maturity = maturity;
+                                else tile.maturity = 100;
                             }
 
-                            console.log(grow);
+                            if(tile.growing.indexOf('Tomatoes') !== -1) {
+                                if(tile.maturity >= 0 && tile.maturity < 20) {
+                                    tile.growing = 'Tomatoes_Level1';
+                                } else if(tile.maturity >= 20 && tile.maturity < 40) {
+                                    tile.growing = 'Tomatoes_Level2';
+                                } else if(tile.maturity >= 40 && tile.maturity < 60) {
+                                    tile.growing = 'Tomatoes_Level3';
+                                } else if(tile.maturity >= 60 && tile.maturity < 80) {
+                                    tile.growing = 'Tomatoes_Level4';
+                                } else if(tile.maturity >= 80 && tile.maturity <= 100) {
+                                    tile.growing = 'Tomatoes';
+                                }
+                            } else if(tile.growing.indexOf('Corn') !== -1) {
+                                if(tile.maturity >= 0 && tile.maturity < 20) {
+                                    tile.growing = 'Corn_Level1';
+                                } else if(tile.maturity >= 20 && tile.maturity < 40) {
+                                    tile.growing = 'Corn_Level2';
+                                } else if(tile.maturity >= 40 && tile.maturity < 60) {
+                                    tile.growing = 'Corn_Level3';
+                                } else if(tile.maturity >= 60 && tile.maturity < 80) {
+                                    tile.growing = 'Corn_Level4';
+                                } else if(tile.maturity >= 80 && tile.maturity <= 100) {
+                                    tile.growing = 'Corn';
+                                }
+                            } else if(tile.growing.indexOf('Wheat') !== -1) {
+                                if(tile.maturity >= 0 && tile.maturity < 20) {
+                                    tile.growing = 'Wheat_Level1';
+                                } else if(tile.maturity >= 20 && tile.maturity < 40) {
+                                    tile.growing = 'Wheat_Level1';
+                                } else if(tile.maturity >= 40 && tile.maturity < 60) {
+                                    tile.growing = 'Wheat_Level2';
+                                } else if(tile.maturity >= 60 && tile.maturity < 80) {
+                                    tile.growing = 'Wheat_Level3';
+                                } else if(tile.maturity >= 80 && tile.maturity <= 100) {
+                                    tile.growing = 'Wheat';
+                                }
+                            }
                         }
                     }
+                    tile.save(function(err){
+                        if(err) console.error(err);
+                        else {
+                            console.log(tile.growing);
+                            io.sockets.emit('refreshTile', tile);
+                        }
+                    });
                 });
-            }
-
-            console.log(grow + 'again');
-
-            tiles[tile].growing = grow;
-            tiles[tile].maturity = maturity;
-            tiles[tile].time = time;
-            tiles[tile].save();
-
-            io.sockets.emit('refreshTile', tiles[tile]);
-        }
+        });
     });
 }, 10000);
 
@@ -201,9 +196,6 @@ io.sockets.on('connection', function(socket) {
 
     socket.emit('getUserId', hs.session.user_id);
 
-    var Tile = require('./models/Tile.Model.js').Tile,
-        User = require('./models/User.Model.js').User;
-
     Tile.find(function(error,tiles) {
         if(error) { console.log(error); }
         else {
@@ -212,7 +204,7 @@ io.sockets.on('connection', function(socket) {
     });
 
     socket.on('getTile', function(position) {
-        var query = Tile.findOne({ "position" : position }, function(error, tile) {
+        Tile.findOne({ "position" : position }, function(error, tile) {
             if(error) { console.log(error); }
             else {
                 socket.emit('returnTile', tile);
