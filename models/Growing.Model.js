@@ -31,6 +31,11 @@ var mongoose=require('./getMongoose.js').mongoose,
             type : Number,
             required : true,
             unique : false
+        },
+        consumption : {               // la quantité de fertility & humidity que la recolte prend
+            type : Number,
+            required : true,
+            unique : false
         }
     }),
 

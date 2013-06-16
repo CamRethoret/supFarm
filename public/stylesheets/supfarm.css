@@ -23,14 +23,48 @@ li a.build-cold,
 li a.build-cold:hover { background: url('../assets/textures/buildings/cold_storage.png') no-repeat; background-size: 30px 30px; margin-left: 6px; }
 li a.build-cold:hover { background-color: rgb(0, 129, 194); }
 
-li.level { padding: 10px 15px; color: rgb(119, 119, 119); }
+li a.buy-baseball,
+li a.buy-baseball:hover { background: url('../assets/textures/weapons/baseball.png') no-repeat; background-size: 30px 20px; margin-left: 6px; }
+li a.buy-baseball:hover { background-color: rgb(0, 129, 194); }
+li a.buy-chainsaw,
+li a.buy-chainsaw:hover { background: url('../assets/textures/weapons/chainsaw.png') no-repeat; background-size: 30px 20px; margin-left: 6px; }
+li a.buy-chainsaw:hover { background-color: rgb(0, 129, 194); }
+li a.buy-ak,
+li a.buy-ak:hover { background: url('../assets/textures/weapons/ak47.png') no-repeat; background-size: 30px 20px; margin-left: 6px; }
+li a.buy-ak:hover { background-color: rgb(0, 129, 194); }
+
+
+li.level,
+li.money,
+li.health { padding: 10px 15px; color: rgb(119, 119, 119); height: 20px; }
+
+li.health .span2 { width: 140px; }
 
 div.iso-popup { background-color: #FFFFFF; text-align: center;  border-radius: 10px; position: absolute; bottom: 10px; right: 10px; }
 div.iso-popup.capture { width: 280px; height: 70px; }
 div.iso-popup.building { width: 280px; height: 35px; }
 div.iso-popup.information { width : 300px; height: 150px; }
-div.iso-popup.information .close-information { cursor: pointer; }
-div.iso-popup.information div.row { margin-left: 17px; margin-top: -10px; }
-div.iso-popup.information a.close-information { position: absolute; top: 10px; right: 10px; }
+div.iso-popup.buy { width : 300px; height: 200px; }
+div.iso-popup a { cursor: pointer; }
+div.iso-popup div.row { margin-left: 17px; margin-top: -10px; }
+div.iso-popup a.close-information { position: absolute; top: 10px; right: 10px; }
 div.iso-popup h4 { margin: 10px; }
-div.iso-popup h4 a { cursor: pointer; }
+
+div.iso-popup.information-grow { width : 300px; height: 330px; }
+div.iso-popup.information-grow .grow,
+div.iso-popup.information-grow .action-grow { margin-top: 30px; }
+div.iso-popup.information-grow .grow img { margin-top: 25px; }
+
+.navbar-fixed-top .container { width: 1200px; }
+.navbar-fixed-top .container .user-rest,
+.navbar-fixed-top .container .stop-rest { color: rgb(153, 153, 153); cursor: pointer; }
+.navbar-fixed-top .container .user-rest:hover,
+.navbar-fixed-top .container .stop-rest:hover  { color: rgb(255, 255, 255); }
+
+div.modal-body .attacker,
+div.modal-body .defender { text-align: center; }
+div.modal-body img { width: 150px; }
+div.modal-body .weapon { margin-top: 10px; }
+div.modal-body .damage { color: red; }
+div.modal-body .span2 { width: 250px; }
+

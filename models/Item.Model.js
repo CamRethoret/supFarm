@@ -5,15 +5,10 @@ var mongoose=require('./getMongoose.js').mongoose,
         type : {                      // le type d'objet (nom)
             type : String,
             required: true,
-            unique : true
-        },
-        description : {
-            type : String,
-            required : true,
             unique : false
         },
-        cost : {
-            type : Number,
+        user_id : {
+            type : String,
             required : true,
             unique : false
         }

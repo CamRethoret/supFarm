@@ -54,12 +54,23 @@ var mongoose=require('./getMongoose.js').mongoose,
             unique : false,
             enum : ['Normal', 'Hard']
         },
+        health_max : {
+            type : Number,
+            required : true,
+            unique : false,
+            min : 0
+        },
         health : {
             type : Number,
             required : true,
             unique : false,
-            min : 0,
-            max : 100
+            min : 0
+        },
+        status : {
+            type : String,
+            required : true,
+            unique : false,
+            enum : ['Playing', 'Resting']
         }
     }),
 

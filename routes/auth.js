@@ -60,12 +60,29 @@ exports.register=function(req, res){
         "location":     "1,1",
         "level":        0,
         "difficulty":   req.body.difficulty,
-        "health":       100
-    })
+        "health":       100,
+        "health_max":   100,
+        "status":       "Playing"
+    });
+
     newUser.save(function(error, user){
         if(error){console.log(error);}
         else{
-            console.log("User "+user.first_name+" ajouté !");}
-    })
-    res.redirect('/');
+            console.log("User "+user.first_name+" ajouté !");
+
+            var Item = require('../models/Item.Model.js').Item;
+            User.findOne({ 'email' : req.body.email}, function(error, user) {
+                if(error) console.log(error);
+                else {
+                    var fork = new Item({
+                        "type" : "Fork",
+                        "user_id" : user._id
+                    });
+                    fork.save();
+
+                    res.redirect('/');
+                }
+            });
+        }
+    });
 };

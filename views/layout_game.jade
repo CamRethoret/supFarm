@@ -48,11 +48,27 @@ html
                                     li
                                         a(class="grow-wheat")
                                             span Wheat
+                            li(class="dropdown")
+                                a(class='dropdown-toggle', id='dropBuy', data-toggle='dropdown', data-target='#') Buy
+                                    b(class='caret')
+                                ul(class='dropdown-menu', role='menu', aria-labelledby='dropBuy')
+                                    li
+                                        a(class="buy-baseball")
+                                            span Baseball Bat
+                                    li
+                                        a(class="buy-chainsaw")
+                                            span Chainsaw
+                                    li
+                                        a(class="buy-ak")
+                                            span AK-47
                         ul.nav.pull-right
                             li(class="level")
+                            li(class="health")
+                            li(class="money")
         div.container
             block content
 
         block scripts
             script(src='/javascripts/jquery.js')
+            script(src='/javascripts/jquery-ui.js')
             script(src='/javascripts/bootstrap.js')

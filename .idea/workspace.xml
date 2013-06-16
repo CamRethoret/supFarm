@@ -2,34 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64574e8e-cc51-4a4b-a226-62f8e9850681" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/gameClasses/ClientObjects.js" afterPath="$PROJECT_DIR$/public/gameClasses/ClientObjects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/weapons/ak47.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/weapons/baseball.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/weapons/chainsaw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/corn_dead.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/corn_level1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/corn_level2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/corn_level3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/corn_level4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/weapons/fork.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/silo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/tomatoes_dead.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/tomatoes_level1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/tomatoes_level2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/tomatoes_level3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/tomatoes_level4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/wheat_level1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/wheat_level2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/wheat_level3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/GraceTime.Model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Weapon.Model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/jquery-ui.js" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardBack.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardSheet.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardSheet_1560.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardSheet_1950.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardSheet_442.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardSheet_884.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardSheet_large.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\chipsSheet.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\chipsSheetSmall.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\indicatorArrow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\lampPost1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\lampPost2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\lampPost3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\lampPost4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\push.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\push.psd" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\tree1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\youLose.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\youLose.psd" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\youWin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\youWin.psd" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Growing.Model.js" afterPath="$PROJECT_DIR$/models/Growing.Model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Item.Model.js" afterPath="$PROJECT_DIR$/models/Item.Model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/User.Model.js" afterPath="$PROJECT_DIR$/models/User.Model.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/auth.js" afterPath="$PROJECT_DIR$/routes/auth.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/client.js" afterPath="$PROJECT_DIR$/public/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/game.js" afterPath="$PROJECT_DIR$/routes/game.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout_game.jade" afterPath="$PROJECT_DIR$/views/layout_game.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/supfarm.css" afterPath="$PROJECT_DIR$/public/stylesheets/supfarm.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="supFarm.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370716636834" ignored="false" />
+    <file path="/Dummy.txt" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371288115984" ignored="false" />
     <file path="/readme.txt" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1368612300442" ignored="false" />
     <file path="/layout.jade" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370464198829" ignored="false" />
-    <file path="/game.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370706197001" ignored="false" />
-    <file path="/app.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370784905301" ignored="false" />
-    <file path="/client.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370786004458" ignored="false" />
+    <file path="/game.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371048773626" ignored="false" />
+    <file path="/app.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371288456511" ignored="false" />
+    <file path="/client.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371224463992" ignored="false" />
     <file path="/game.jade" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370681889341" ignored="false" />
-    <file path="/layout_game.jade" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370695647684" ignored="false" />
+    <file path="/layout_game.jade" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371202390543" ignored="false" />
     <file path="/ServerConfig.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370109573470" ignored="false" />
     <file path="/server.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370178943423" ignored="false" />
-    <file path="/supfarm.css" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370699846584" ignored="false" />
-    <file path="/User.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370691058495" ignored="false" />
+    <file path="/supfarm.css" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371201330025" ignored="false" />
+    <file path="/User.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371036103429" ignored="false" />
     <file path="/Tile.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370707406818" ignored="false" />
-    <file path="/Growing.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370168745281" ignored="false" />
+    <file path="/Growing.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370790591422" ignored="false" />
     <file path="/Building.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370169037419" ignored="false" />
-    <file path="/Item.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370169249184" ignored="false" />
-    <file path="/auth.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370691074002" ignored="false" />
+    <file path="/Item.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371049087178" ignored="false" />
+    <file path="/auth.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371050505947" ignored="false" />
     <file path="/index.jade" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370463942849" ignored="false" />
     <file path="/login.jade" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370464279092" ignored="false" />
     <file path="/signUp.jade" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370520698039" ignored="false" />
     <file path="/ClientObjects.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370710343173" ignored="false" />
+    <file path="/Weapon.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371038149496" ignored="false" />
+    <file path="/GraceTime.Model.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371220449108" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,14 +98,37 @@
     <favorites_list name="supFarm" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49011588">
+    <splitter split-orientation="horizontal" split-proportion="0.48869565">
       <split-first>
         <leaf>
-          <file leaf-file-name="client.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/client.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="394" column="56" selection-start="25645" selection-end="25645" vertical-scroll-proportion="0.55060726">
-                  <folding />
+                <state line="955" column="62" selection-start="69044" selection-end="69044" vertical-scroll-proportion="0.31398416">
+                  <folding>
+                    <marker date="1371224562957" expanded="false" signature="8207:8220" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="8328:8355" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="8368:8380" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="8439:8452" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="10617:10629" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="10733:10760" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="10773:10785" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="10844:10857" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="13008:13021" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="13119:13146" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="13159:13171" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="13224:13237" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="16864:16871" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="16988:17002" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="17040:17056" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="17398:17405" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="17551:17565" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="17933:17940" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="18086:18100" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="19006:19013" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="59658:59670" placeholder="..." />
+                    <marker date="1371224562957" expanded="false" signature="60371:60383" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -63,8 +136,19 @@
           <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/routes/game.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="27" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0">
+                <state line="108" column="40" selection-start="2610" selection-end="2610" vertical-scroll-proportion="0.0">
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="auth.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/routes/auth.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="75" column="22" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <marker date="1371050636112" expanded="true" signature="931:2347" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -94,16 +178,34 @@
           <file leaf-file-name="Tile.Model.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models/Tile.Model.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="22" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+                <state line="25" column="20" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="161" column="23" selection-start="6638" selection-end="6638" vertical-scroll-proportion="0.0">
+                <state line="85" column="17" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.65578634">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Weapon.Model.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/models/Weapon.Model.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="25" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Item.Model.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/models/Item.Model.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="26" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -112,16 +214,16 @@
           <file leaf-file-name="Growing.Model.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models/Growing.Model.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="14" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
+                <state line="33" column="10" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ClientObjects.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="ClientObjects.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/gameClasses/ClientObjects.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="92" selection-start="754" selection-end="754" vertical-scroll-proportion="-3.9933035">
+                <state line="20" column="92" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -130,7 +232,7 @@
           <file leaf-file-name="layout_game.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/layout_game.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="51" column="45" selection-start="2567" selection-end="2567" vertical-scroll-proportion="0.0">
+                <state line="72" column="46" selection-start="3623" selection-end="3623" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -139,7 +241,7 @@
           <file leaf-file-name="supfarm.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/stylesheets/supfarm.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="59" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.0">
+                <state line="66" column="44" selection-start="3380" selection-end="3380" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -148,7 +250,7 @@
           <file leaf-file-name="User.Model.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models/User.Model.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="61" column="21" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0">
+                <state line="72" column="39" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -174,30 +276,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/gameClasses/CharacterContainer.js" />
-        <option value="$PROJECT_DIR$/views/login.jade" />
-        <option value="$PROJECT_DIR$/views/layout.jade" />
-        <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/views/signUp.jade" />
         <option value="$PROJECT_DIR$/public/ClientConfig.js" />
         <option value="$PROJECT_DIR$/views/game.jade" />
-        <option value="$PROJECT_DIR$/models/User.Model.js" />
-        <option value="$PROJECT_DIR$/routes/auth.js" />
-        <option value="$PROJECT_DIR$/views/layout_game.jade" />
-        <option value="$PROJECT_DIR$/public/stylesheets/supfarm.css" />
-        <option value="$PROJECT_DIR$/routes/game.js" />
         <option value="$PROJECT_DIR$/models/Tile.Model.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/public/client.js" />
         <option value="$PROJECT_DIR$/public/gameClasses/ClientObjects.js" />
+        <option value="$PROJECT_DIR$/models/Growing.Model.js" />
+        <option value="$PROJECT_DIR$/models/User.Model.js" />
+        <option value="$PROJECT_DIR$/models/Weapon.Model.js" />
+        <option value="$PROJECT_DIR$/routes/game.js" />
+        <option value="$PROJECT_DIR$/models/Item.Model.js" />
+        <option value="$PROJECT_DIR$/routes/auth.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/supfarm.css" />
+        <option value="$PROJECT_DIR$/views/layout_game.jade" />
+        <option value="$PROJECT_DIR$/models/GraceTime.Model.js" />
+        <option value="$PROJECT_DIR$/public/client.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -299,6 +401,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="supFarm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="supFarm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="gameClasses" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -325,13 +445,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="settings.github" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app.js" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -436,21 +556,25 @@
       <created>1370716358093</created>
       <updated>1370716358093</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Gestion des tiles en continu sur le serveur + Affichage automatique des poussées des plantations">
+      <created>1370787263559</created>
+      <updated>1370787263559</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.114665054" sideWeight="0.61264366" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14370811" sideWeight="0.71088433" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298585" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3873563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28911564" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -504,7 +628,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gestion du placement des batiments et plantations&#10;Gestion des tiles en continu sur le serveur" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gestion des tiles en continu sur le serveur + Affichage automatique des poussées des plantations" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -529,48 +653,15 @@
     <MESSAGE value="Selection d'une tile et possibilité de l'attaquer pour son territoire" />
     <MESSAGE value="Gestion du login avec session" />
     <MESSAGE value="Gestion du placement des batiments et plantations&#10;Gestion des tiles en continu sur le serveur" />
+    <MESSAGE value="Gestion des tiles en continu sur le serveur + Affichage automatique des poussées des plantations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="73" selection-end="73" vertical-scroll-proportion="0.14756945" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/gameClasses/ClientNetworkEvents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/ClientConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="41" selection-start="266" selection-end="266" vertical-scroll-proportion="0.22537878">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Cours/SUPINFO/M1/Projects/engine payant/examples/15.1-isoimages/gameClasses/ClientObjects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="301" selection-end="301" vertical-scroll-proportion="0.45833334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="25" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.7321131" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/game.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="22" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="27" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -582,58 +673,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout_game.jade">
+    <entry file="file://$PROJECT_DIR$/routes/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="45" selection-start="2567" selection-end="2567" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="75" column="22" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1371050636112" expanded="true" signature="931:2347" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/supfarm.css">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery-ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="59" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/GraceTime.Model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="46" selection-start="555" selection-end="555" vertical-scroll-proportion="0.6040609">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/User.Model.js">
+    <entry file="file://$PROJECT_DIR$/routes/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="21" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Tile.Model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="23" selection-start="6638" selection-end="6638" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Growing.Model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="14" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/gameClasses/ClientObjects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="92" selection-start="754" selection-end="754" vertical-scroll-proportion="-3.9933035">
+        <state line="108" column="40" selection-start="2610" selection-end="2610" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="394" column="56" selection-start="25645" selection-end="25645" vertical-scroll-proportion="0.55060726">
+        <state line="955" column="62" selection-start="69044" selection-end="69044" vertical-scroll-proportion="0.31398416">
+          <folding>
+            <marker date="1371224562957" expanded="false" signature="8207:8220" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="8328:8355" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="8368:8380" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="8439:8452" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="10617:10629" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="10733:10760" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="10773:10785" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="10844:10857" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="13008:13021" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="13119:13146" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="13159:13171" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="13224:13237" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="16864:16871" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="16988:17002" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="17040:17056" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="17398:17405" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="17551:17565" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="17933:17940" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="18086:18100" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="19006:19013" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="59658:59670" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="60371:60383" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Tile.Model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="20" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Weapon.Model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="25" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Item.Model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="26" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Growing.Model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="10" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/gameClasses/ClientObjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="92" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout_game.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="46" selection-start="3623" selection-end="3623" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/User.Model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="39" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/supfarm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="44" selection-start="3380" selection-end="3380" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="17" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.65578634">
           <folding />
         </state>
       </provider>
