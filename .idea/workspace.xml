@@ -2,62 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64574e8e-cc51-4a4b-a226-62f8e9850681" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/weapons/ak47.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/weapons/baseball.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/weapons/chainsaw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/corn_dead.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/corn_level1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/corn_level2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/corn_level3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/corn_level4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/weapons/fork.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/buildings/silo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/tomatoes_dead.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/tomatoes_level1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/tomatoes_level2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/tomatoes_level3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/tomatoes_level4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/wheat_level1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/wheat_level2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/textures/tiles/wheat_level3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/GraceTime.Model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Weapon.Model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/jquery-ui.js" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardBack.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardSheet.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardSheet_1560.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardSheet_1950.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardSheet_442.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardSheet_884.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\cardSheet_large.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\chipsSheet.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\chipsSheetSmall.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\indicatorArrow.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\lampPost1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\lampPost2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\lampPost3.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\lampPost4.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\push.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\push.psd" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\tree1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\youLose.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\youLose.psd" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\youWin.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\objects\youWin.psd" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Growing.Model.js" afterPath="$PROJECT_DIR$/models/Growing.Model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Item.Model.js" afterPath="$PROJECT_DIR$/models/Item.Model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/User.Model.js" afterPath="$PROJECT_DIR$/models/User.Model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/auth.js" afterPath="$PROJECT_DIR$/routes/auth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/client.js" afterPath="$PROJECT_DIR$/public/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/game.js" afterPath="$PROJECT_DIR$/routes/game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout_game.jade" afterPath="$PROJECT_DIR$/views/layout_game.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/supfarm.css" afterPath="$PROJECT_DIR$/public/stylesheets/supfarm.css" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\backgrounds\chipBackground.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\backgrounds\city_skyline.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\backgrounds\grassTile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\backgrounds\grassTile.psd" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\backgrounds\greyGradient.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\backgrounds\tableExtended.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\fonts\adobe_arabic_26pt.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\fonts\eater_26pt.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\fonts\verdana_10pt.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\fonts\verdana_10px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\fonts\verdana_12pt.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\particles\dark_effect_001.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\particles\glow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\particles\star1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\particles\star1_glow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\particles\star2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\particles\star2_glow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\particles\star3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\particles\star4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\particles\wind_eff_001.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\char110.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\char112.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\char113.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\charchip01.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\edgeDetectTest.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\fairy.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\gallery_6129_38_17945.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\gallery_72313_146_12172.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\gallery_72313_146_21247.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\guard01.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\guard02.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\lenna.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\newchar01-1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\newchar02-2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\newchar03-3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\newchar04-4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\newchar05-5.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\prettycoolheh.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\shinigami.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\tron.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\tronGlowMask.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\sprites\womanWalking.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\NinjaSpriteSheet.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\Tool-3DTranslate.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\Tool-Pan.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\Tool-Selection (1).png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\Tool-Selection.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\Tool-Square.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\Tool-Zoom.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\canvas-tag.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\dropdown-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\gamingLogo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\icon-gear.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\icon_entity.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\loadingGame.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\play.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\uiButton_delete.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\uiButton_dollar.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\uiButton_house.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\uiButton_move.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\uiButton_roads.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\uiButton_select.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\uiButton_thumbsDown.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\uiButton_thumbsUp.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\uiButton_tree.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\zoom_minus.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\supFarm\public\assets\textures\ui\zoom_plus.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="supFarm.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371288115984" ignored="false" />
+    <file path="/Dummy.txt" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371371775095" ignored="false" />
     <file path="/readme.txt" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1368612300442" ignored="false" />
     <file path="/layout.jade" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1370464198829" ignored="false" />
     <file path="/game.js" changelist="64574e8e-cc51-4a4b-a226-62f8e9850681" time="1371048773626" ignored="false" />
@@ -98,13 +115,13 @@
     <favorites_list name="supFarm" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48869565">
+    <splitter split-orientation="horizontal" split-proportion="0.49931693">
       <split-first>
         <leaf>
-          <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/client.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="955" column="62" selection-start="69044" selection-end="69044" vertical-scroll-proportion="0.31398416">
+                <state line="961" column="42" selection-start="69428" selection-end="69428" vertical-scroll-proportion="0.0">
                   <folding>
                     <marker date="1371224562957" expanded="false" signature="8207:8220" placeholder="..." />
                     <marker date="1371224562957" expanded="false" signature="8328:8355" placeholder="..." />
@@ -129,6 +146,15 @@
                     <marker date="1371224562957" expanded="false" signature="59658:59670" placeholder="..." />
                     <marker date="1371224562957" expanded="false" signature="60371:60383" placeholder="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Character.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/gameClasses/Character.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -184,10 +210,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="85" column="17" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.65578634">
+                <state line="85" column="17" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.3453125">
                   <folding />
                 </state>
               </provider>
@@ -296,10 +322,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1358" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -560,27 +586,31 @@
       <created>1370787263559</created>
       <updated>1370787263559</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Projet quasi-finalisé - reste quelques debugs à faire">
+      <created>1371371782364</created>
+      <updated>1371371782364</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14370811" sideWeight="0.71088433" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11647556" sideWeight="0.8045977" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298585" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28911564" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1954023" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -628,7 +658,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gestion des tiles en continu sur le serveur + Affichage automatique des poussées des plantations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Projet quasi-finalisé - reste quelques debugs à faire" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -654,18 +684,12 @@
     <MESSAGE value="Gestion du login avec session" />
     <MESSAGE value="Gestion du placement des batiments et plantations&#10;Gestion des tiles en continu sur le serveur" />
     <MESSAGE value="Gestion des tiles en continu sur le serveur + Affichage automatique des poussées des plantations" />
+    <MESSAGE value="Projet quasi-finalisé - reste quelques debugs à faire" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/game.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/signUp.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="31" selection-start="748" selection-end="748" vertical-scroll-proportion="0.0">
@@ -700,36 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="108" column="40" selection-start="2610" selection-end="2610" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="955" column="62" selection-start="69044" selection-end="69044" vertical-scroll-proportion="0.31398416">
-          <folding>
-            <marker date="1371224562957" expanded="false" signature="8207:8220" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="8328:8355" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="8368:8380" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="8439:8452" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="10617:10629" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="10733:10760" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="10773:10785" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="10844:10857" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="13008:13021" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="13119:13146" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="13159:13171" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="13224:13237" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="16864:16871" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="16988:17002" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="17040:17056" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="17398:17405" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="17551:17565" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="17933:17940" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="18086:18100" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="19006:19013" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="59658:59670" placeholder="..." />
-            <marker date="1371224562957" expanded="false" signature="60371:60383" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -791,7 +785,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="17" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.65578634">
+        <state line="85" column="17" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.3453125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="961" column="42" selection-start="69428" selection-end="69428" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1371224562957" expanded="false" signature="8207:8220" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="8328:8355" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="8368:8380" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="8439:8452" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="10617:10629" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="10733:10760" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="10773:10785" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="10844:10857" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="13008:13021" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="13119:13146" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="13159:13171" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="13224:13237" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="16864:16871" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="16988:17002" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="17040:17056" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="17398:17405" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="17551:17565" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="17933:17940" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="18086:18100" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="19006:19013" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="59658:59670" placeholder="..." />
+            <marker date="1371224562957" expanded="false" signature="60371:60383" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/gameClasses/Character.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
